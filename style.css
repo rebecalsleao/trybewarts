@@ -1,6 +1,8 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  justify-content: flex-end;
+  align-content: space-evenly;
 }
 
 .trybewarts-login {
@@ -24,10 +26,15 @@ main {
   display: flex;
   flex-direction: column;
   width: 675px;
+  align-content: space-evenly;
 }
 
 #trybewarts-forms-logo {
   display: flex;
   justify-content: flex-end;
   height: 500px;
+}
+
+#evaluation-form input , select {
+  padding: 10px;
 }
