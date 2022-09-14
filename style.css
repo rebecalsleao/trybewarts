@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+}
+
+.trybewarts-login {
+  display: flex;
+  height: 20px;
+}
+
+/* #trybewarts-header-title {
+} */
+
+.trybewarts-login input {
+  display: flex;
+  /* align-items: center; */
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+#trybewarts-forms-logo {
+  display: flex;
+  justify-content: flex-end;
+  height: 500px;
+}
