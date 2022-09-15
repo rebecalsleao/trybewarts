@@ -1,8 +1,7 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: flex-end;
-  align-content: space-evenly;
+  align-items: space-between;
 }
 
 .trybewarts-login {
@@ -10,12 +9,9 @@
   height: 20px;
 }
 
-/* #trybewarts-header-title {
-} */
-
 .trybewarts-login input {
   display: flex;
-  /* align-items: center; */
+  flex-direction: column;
 }
 
 main {
@@ -37,4 +33,9 @@ main {
 
 #evaluation-form input , select {
   padding: 10px;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
 }
