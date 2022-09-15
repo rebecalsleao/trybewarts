@@ -10,3 +10,4 @@ function onClickLogin() {
     alert('Email ou senha inválidos.');
   }
 }
+onClickLogin();
