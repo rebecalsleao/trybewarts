@@ -1,12 +1,12 @@
 function onClickLogin() {
-  let email = 'tryber@teste.com;
-  let password = '123456';
-  const inputEmail = document.getElementById("email");
-  const inputPassword = document.getElementById("password");
+  const email = 'tryber@teste.com';
+  const password = '123456';
+  const inputEmail = document.getElementById('email');
+  const inputPassword = document.getElementById('password');
 
   if (email === inputEmail.value && password === inputPassword.value) {
-    alert("Olá, Tryber!");
+    alert('Olá, Tryber!');
   } else {
-    alert("Email ou senha inválidos.");
+    alert('Email ou senha inválidos.');
   }
 }
