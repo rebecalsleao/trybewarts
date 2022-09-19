@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,7 +7,6 @@
   <link rel="stylesheet" href="style.css" />
   <title>Trybewarts</title>
 </head>
-
 <body>
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo Trybewarts" />
@@ -20,9 +18,7 @@
         <input id="password" type="password" name="password" placeholder="Senha" />
         <button id="buttom-loguin" onclick="onClickLogin()">Entrar</button>
     </form>
-
   </header>
-
   <br><br>
   <main>
     <form id="evaluation-form" action="">
@@ -43,7 +39,6 @@
           <option id="pytherina-house" value="Pytherina">Pytherina</option>
         </select>
       </div>
-
       <div>
         <label for="" name="family" id="label-family">Qual sua família?</label>
         <div><input id="frontend" type="radio" name="family" value="Frontend">
@@ -56,7 +51,6 @@
           <label for="fullstack">FullStack</label>
         </div>
       </div>
-
       <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
       <div>
         <input id="hofs" type="checkbox" class="subject" value="HoFs">
@@ -66,7 +60,6 @@
         <input id="promises" type="checkbox" class="subject" value="Promises">
         <label for="promises">Promises</label>
       </div>
-
       <div>
         <input id="react" type="checkbox" class="subject" value="React">
         <label for="react">React</label>
@@ -97,12 +90,13 @@
         <label for="n10">10</label>
         <input id="n10" type="radio" name="rate" value="10"></label>
       <label class="textarea" for="">Deixe seu comentário:</label>
-      <textarea  name="" id="" cols="30" rows="10" maxlength="500"></textarea>
+      <textarea  name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+      <span id="counter">500/500</span>
       <div>
       <label id="label-infos" for="agreement">"Você concorda com o uso das informações acima?"</label>
       <input id="agreement" type="checkbox" onclick='desabilitar(this)'>
     </div>
-    <button id="submit-btn" type="submit" disabled="disabled">Enviar</button>
+    <button id="submit-btn" type="submit" disabled="disabled" onclick="formData()">Enviar</button>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="" />
   </main>

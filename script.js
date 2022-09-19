@@ -23,3 +23,15 @@ function desabilitar() {
   }
 }
 desabilitar();
+
+const textArea = document.getElementById('textarea');
+const characterCounter = document.getElementById('counter');
+const maxNumOfChars = 500;
+const countCharacters = () => {
+  const numOfEnteredChars = textArea.value.length;
+  const counter = maxNumOfChars - numOfEnteredChars;
+  characterCounter.textContent = `${counter}/500`;
+};
+textArea.addEventListener('input', countCharacters);
+
+
