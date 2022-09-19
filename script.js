@@ -33,5 +33,3 @@ const countCharacters = () => {
   characterCounter.textContent = `${counter}/500`;
 };
 textArea.addEventListener('input', countCharacters);
-
-
