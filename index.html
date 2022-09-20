@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="style.css" />
   <title>Trybewarts</title>
 </head>
+
 <body>
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo Trybewarts" />
@@ -21,7 +23,8 @@
   </header>
   <br><br>
   <main>
-    <form id="evaluation-form" action="">
+
+    <form id="evaluation-form" action="javascript: formData()">
       <div>
         <label for="input-name"></label>
         <input id="input-name" type="text" placeholder="Nome" />
@@ -68,6 +71,7 @@
         <input id="python" type="checkbox" class="subject" value="Python">
         <label for="python">Python</label>
       </div>
+
       <label id="label-rate" for="">Como você avalia a Trybewarts?
         <label for="n1">1</label>
         <input id="n1" type="radio" name="rate" value="1">
@@ -90,14 +94,25 @@
         <label for="n10">10</label>
         <input id="n10" type="radio" name="rate" value="10"></label>
       <label class="textarea" for="">Deixe seu comentário:</label>
-      <textarea  name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+
+      <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
       <span id="counter">500/500</span>
+
       <div>
-      <label id="label-infos" for="agreement">"Você concorda com o uso das informações acima?"</label>
-      <input id="agreement" type="checkbox" onclick='desabilitar(this)'>
-    </div>
-    <button id="submit-btn" type="submit" disabled="disabled" onclick="formData()">Enviar</button>
+        <label id="label-infos" for="agreement">"Você concorda com o uso das informações acima?"</label>
+        <input id="agreement" type="checkbox" onclick='desabilitar(this)'>
+      </div>
+
+      <button id="submit-btn" type="submit" disabled="disabled">Enviar</button>
     </form>
+
+    <div id="form-data" class="form-data">
+      <p id="form-name" value="name"></p>
+      <p id="form-email" value="email"></p>
+      <p id="form-house" value="house"></p>
+      <p id="form-family" value="family"></p>
+    </div>
+
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="" />
   </main>
   <footer>
