@@ -31,7 +31,8 @@ main {
   height: 500px;
 }
 
-#evaluation-form input , select {
+#evaluation-form input,
+select {
   padding: 10px;
 }
 
@@ -40,6 +41,6 @@ main {
   flex-direction: column;
 }
 
-.form-data {
-  display: none;
+.display-none {
+  display: none !important;
 }

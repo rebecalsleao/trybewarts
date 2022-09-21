@@ -18,7 +18,7 @@
         <input id="email" type="email" name="email" placeholder="Email" />
         <label for="password"></label>
         <input id="password" type="password" name="password" placeholder="Senha" />
-        <button id="buttom-loguin" onclick="onClickLogin()">Entrar</button>
+        <button id="buttom-loguin">Entrar</button>
     </form>
   </header>
   <br><br>
@@ -54,6 +54,7 @@
           <label for="fullstack">FullStack</label>
         </div>
       </div>
+
       <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
       <div>
         <input id="hofs" type="checkbox" class="subject" value="HoFs">
@@ -63,6 +64,7 @@
         <input id="promises" type="checkbox" class="subject" value="Promises">
         <label for="promises">Promises</label>
       </div>
+
       <div>
         <input id="react" type="checkbox" class="subject" value="React">
         <label for="react">React</label>
@@ -106,11 +108,11 @@
       <button id="submit-btn" type="submit" disabled="disabled">Enviar</button>
     </form>
 
-    <div id="form-data" class="form-data">
-      <p id="form-name" value="name"></p>
-      <p id="form-email" value="email"></p>
-      <p id="form-house" value="house"></p>
-      <p id="form-family" value="family"></p>
+    <div id="form-data" class="display-none">
+      <p id="form-name"></p>
+      <p id="form-email"></p>
+      <p id="form-house"></p>
+      <p id="form-family"></p>
     </div>
 
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="" />

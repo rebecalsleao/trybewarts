@@ -1,3 +1,5 @@
+const evaluationFormId = 'evaluation-form';
+
 function onClickLogin() {
   const email = 'tryber@teste.com';
   const password = '123456';
@@ -23,6 +25,34 @@ function desabilitar() {
 }
 desabilitar();
 
+function formDataText(value) {
+  document.getElementById('form-name').innerText = `Nome: ${value.name} ${value.lastName}`;
+  document.getElementById('form-email').innerText = `Email: ${value.email}`;
+  document.getElementById('form-house').innerText = `Casa: ${value.house}`;
+  document.getElementById('form-family').innerText = `Família: ${value.family}`;
+
+  document.getElementById('form-data').classList.remove('display-none');
+  document.getElementById(evaluationFormId).classList.add('display-none');
+}
+
+function formData() {
+  const nameValue = document.getElementById('input-name').value;
+  const lastNameValue = document.getElementById('input-lastname').value;
+  const emailValue = document.getElementById('input-email').value;
+  const houseValue = document.getElementById('house').value;
+  const familyValue = document.getElementById(evaluationFormId).elements['family'].value;
+
+  const formValue = {
+    name: nameValue,
+    lastName: lastNameValue,
+    email: emailValue,
+    house: houseValue,
+    family: familyValue,
+  };
+
+  formDataText(formValue);
+}
+
 const textArea = document.getElementById('textarea');
 const characterCounter = document.getElementById('counter');
 const maxNumOfChars = 500;
@@ -32,20 +62,5 @@ const countCharacters = () => {
   characterCounter.textContent = `${counter}/500`;
 };
 textArea.addEventListener('input', countCharacters);
-
-function formData() {
-  const nameValue = document.getElementById('input-name').value;
-  const lastNameValue = document.getElementById('input-lastname').value;
-  const emailValue = document.getElementById('input-email').value;
-  const houseValue = document.getElementById('house').value;
-  const familyValue = document.getElementById('evaluation-form').elements['family'].value;
-
-  const formValue = {
-    name: nameValue,
-    lastName: lastNameValue,
-    email: emailValue,
-    house: houseValue,
-    family: familyValue,
-  };
-  console.log(formValue);
-}
+document.getElementById('buttom-loguin').onclick = () => onClickLogin();
+document.getElementById(evaluationFormId).onsubmit = () => formData();
